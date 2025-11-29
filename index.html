@@ -7,35 +7,59 @@
 
   <style>
     body {
-      font-family: system-ui, sans-serif;
+      font-family: "Inter", system-ui, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f7f7f7;
+      background: #f4f6f8;
       color: #222;
     }
+
     header {
-      background: #1e1e1e;
+      background: linear-gradient(135deg, #111, #333);
       color: #fff;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
     }
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 15px;
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
     }
+
+    p.subtitle {
+      font-size: 1.1rem;
+      opacity: 0.8;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
     h2 {
       margin-top: 40px;
+      font-size: 1.7rem;
+      color: #111;
     }
+
+    .video-card {
+      margin-top: 20px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+
     .video-wrapper {
       position: relative;
       padding-bottom: 56.25%;
+      border-radius: 12px;
       height: 0;
       overflow: hidden;
-      border-radius: 12px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
       background: #000;
     }
+
     .video-wrapper iframe {
       position: absolute;
       top: 0;
@@ -44,11 +68,12 @@
       height: 100%;
       border: none;
     }
+
     footer {
-      margin-top: 40px;
+      margin-top: 60px;
       text-align: center;
       padding: 20px;
-      color: #666;
+      color: #555;
     }
   </style>
 </head>
@@ -57,31 +82,39 @@
 
   <header>
     <h1>NablaTech – AI Powered CAD Tools</h1>
-    <p>NablaCAD & NablaDraft Demo Videos</p>
+    <p class="subtitle">Demo Videos for NablaCAD & NablaDraft</p>
   </header>
 
   <div class="container">
 
-    <!-- NablaCAD Video -->
+    <!-- NablaCAD Demo -->
     <h2>NablaCAD Demo</h2>
-    <div class="video-wrapper">
-      <iframe 
-        src="https://www.youtube.com/embed/XXXXXXXXXXX" 
-        title="NablaCAD Demo"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
+    <div class="video-card">
+      <div class="video-wrapper">
+        <iframe 
+          src="https://www.youtube.com/embed/mZDEXxTejkU?si=Mz1vFa7CzeSKifRk"
+          title="NablaCAD Demo"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
     </div>
 
-    <!-- NablaDraft Video -->
+    <!-- NablaDraft Demo -->
     <h2>NablaDraft Demo</h2>
-    <div class="video-wrapper">
-      <iframe 
-        src="https://www.youtube.com/embed/YYYYYYYYYYY" 
-        title="NablaDraft Demo"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
+    <div class="video-card">
+      <div class="video-wrapper">
+        <iframe 
+          src="https://www.youtube.com/embed/tH4A8PMrjB0?si=Fi6lHffg_FmvVeF0"
+          title="NablaDraft Demo"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
     </div>
 
   </div>
