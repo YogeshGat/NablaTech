@@ -13,23 +13,14 @@
       background: #f0f7ff;
       color: #1a1a1a;
     }
-
     header {
       background: linear-gradient(135deg, #0077ff, #0056c7);
       color: #fff;
       padding: 50px 20px;
       text-align: center;
     }
-
-    h1 {
-      font-size: 2.4rem;
-      margin-bottom: 10px;
-    }
-
-    p.subtitle {
-      font-size: 1.15rem;
-      opacity: 0.9;
-    }
+    h1 { font-size: 2.4rem; margin-bottom: 10px; }
+    p.subtitle { font-size: 1.15rem; opacity: 0.9; }
 
     .container {
       max-width: 1100px;
@@ -79,10 +70,7 @@
       border: none;
     }
 
-    ul {
-      line-height: 1.7;
-    }
-
+    ul { line-height: 1.7; }
     footer {
       margin-top: 70px;
       text-align: center;
@@ -101,35 +89,26 @@
 
   <div class="container">
 
-    <!-- GPT-Based Tools -->
-    <h2>GPT-Based Tools & AI Workflows</h2>
-    <div class="section-card">
-      <ul>
-        <li>Natural language to sketch/solid generation</li>
-        <li>Prompt → Structured CAD JSON DSL converter</li>
-        <li>AI-driven command auto-suggestions</li>
-        <li>Voice-to-geometry pipeline</li>
-        <li>GPT-based semantic editing of CAD models</li>
-        <li>Design intent extraction from user prompts</li>
-      </ul>
-    </div>
+    <!-- Removed GPT-Based Tools Section -->
 
     <!-- NablaCAD Section -->
     <h2>NablaCAD – AI Powered 3D CAD System</h2>
     <div class="section-card">
-      <p>NablaCAD is an AI-assisted 3D modeling tool that lets users create and modify geometry using simple natural language instructions. It focuses on real-time productivity through live previews and intelligent assistance.</p>
+      <p>NablaCAD is an AI-driven 3D modeling system designed to convert natural language into parametric 3D models. Built with a combination of OpenCASCADE, custom geometry logic, and ML-based reasoning.</p>
 
       <h3>AI Capabilities</h3>
       <ul>
-        <li>Create geometry using natural language</li>
-        <li>Live previews while typing or speaking</li>
-        <li>Smart suggestions</li>
+        <li>Natural language → 3D solids, sketches, features</li>
+        <li>Smart design suggestions and auto-corrections</li>
+        <li>Live preview for each command</li>
       </ul>
 
-      <h3>Additional Features</h3>
+      <h3>Core Features</h3>
       <ul>
-        <li>Import/Export STEP, IGES, STL</li>
-        <li>Parametric editable command history</li>
+        <li>3D visualization using Qt + OpenGL</li>
+        <li>Parametric command replay (custom NL format)</li>
+        <li>Import/Export: STEP, IGES, STL</li>
+        <li>Supported ops: Extrude, Loft, Chamfer, Fillet, Hole, Offset</li>
       </ul>
     </div>
 
@@ -146,20 +125,21 @@
     <!-- NablaDraft Section -->
     <h2>NablaDraft – AI Powered 2D Drafting Tool</h2>
     <div class="section-card">
-      <p>NablaDraft automates 2D CAD drafting using AI. It understands natural language instructions to generate sketches, annotations, layers, patterns, and dimensions with intelligent geometric reasoning.</p>
+      <p>NablaDraft automates 2D sketching and drafting using natural language instructions. It supports AI-based layout creation, editing, layer management, and geometry transformations.</p>
 
       <h3>AI Capabilities</h3>
       <ul>
-        <li>Natural language geometry creation & editing</li>
-        <li>Feature & pattern recognition</li>
-        <li>Layer, color, and attribute editing</li>
-        <li>Text & smart dimensions</li>
+        <li>Natural Language → 2D sketches, edits, trims, offsets</li>
+        <li>Auto layer/color assignment from single prompt</li>
+        <li>Pattern, hole arrays, feature edits</li>
+        <li>AI-driven Image → DXF converter (MVP in progress)</li>
       </ul>
 
-      <h3>Additional Features</h3>
+      <h3>Core Features</h3>
       <ul>
-        <li>Image to sketch conversion</li>
-        <li>Import/Export DXF</li>
+        <li>DXF Import & Export</li>
+        <li>Smart dimensions & annotations</li>
+        <li>Attribute editing via prompt</li>
       </ul>
     </div>
 
@@ -178,29 +158,30 @@
     <div class="section-card">
       <p><strong>Name:</strong> Mr. Yogesh Gat</p>
       <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yogesh-gat-7598587b/" target="_blank">View Profile</a></p>
-      <p><strong>Experience:</strong> 10 years in CAD, CAM, and CAE domain</p>
-      <p><strong>Expertise:</strong> End-to-end CAD/CAM tool development, AI-driven geometry reasoning, computational geometry, and intelligent CAD automation.</p>
+      <p><strong>Experience:</strong> 10 years in CAD, CAM, CAE & AI-driven engineering software</p>
 
-      <h3>Technology Stack Expertise</h3>
+      <p><strong>Short Bio:</strong><br>
+      “I’ve always been passionate about building the future of CAD, 3D geometry, and AI-driven design tools. Over the last several years, I’ve independently explored how smarter software can simplify workflows for designers, engineers, and manufacturers. I enjoy solving complex geometric challenges, experimenting with new ideas, and developing practical tools that genuinely help users.”</p>
+
+      <h3>Technical Skills</h3>
       <ul>
-        <li>C++, Qt, OpenGL/GLSL</li>
-        <li>Open CASCADE (OCC) B-Rep modeling & CAD algorithms</li>
-        <li>DXF engine, computational geometry, drafting engine design</li>
-        <li>Multi-threading, OpenMP, real-time rendering pipelines</li>
+        <li>C++ (Expert), C#, Python</li>
+        <li>Qt, MFC, Coin3D, OpenGL</li>
+        <li>OpenCASCADE, SolidWorks, Inventor, CREO, RealDWG</li>
+        <li>PyTorch, ML pipeline design, GPT integration</li>
       </ul>
 
-      <h3>AI / ML + GPT-Based Skills</h3>
+      <h3>AI / ML Skills</h3>
       <ul>
-        <li>Natural Language → CAD DSL pipeline design</li>
-        <li>GPT/FLAN-T5 model fine-tuning & optimization (QLoRA)</li>
-        <li>Feature recognition using hybrid ML + geometry logic</li>
-        <li>Dataset creation, AI model training & evaluation</li>
-        <li>GPT-based design reasoning and smart suggestion systems</li>
+        <li>Prompt-to-CAD AI/ML pipeline</li>
+        <li>Transformers, FLAN-T5 and GPT models fine-tuning</li>
+        <li>Feature recognition using hybrid ML + geometry</li>
+        <li>Dataset creation, model training, optimization</li>
       </ul>
 
-      <h3>Contact Details</h3>
+      <h3>Contact</h3>
       <p><strong>Email:</strong> gatyogesh@gmail.com</p>
-      <p><strong>Mobile:</strong> +91-7666593464</p>
+      <p><strong>Phone:</strong> +91-7666593464</p>
     </div>
 
   </div>
